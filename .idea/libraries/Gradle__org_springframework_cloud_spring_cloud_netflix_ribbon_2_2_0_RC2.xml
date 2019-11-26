@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.springframework.cloud:spring-cloud-netflix-ribbon:2.2.0.RC2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-netflix-ribbon/2.2.0.RC2/4cc63dd36edc7ac42f5cc214f11967c172d27817/spring-cloud-netflix-ribbon-2.2.0.RC2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-netflix-ribbon/2.2.0.RC2/b31457a04a2e12a37400f18c2dc8c21ecb414cf0/spring-cloud-netflix-ribbon-2.2.0.RC2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

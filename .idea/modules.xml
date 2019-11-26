@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/config-service/config-service.iml" filepath="$PROJECT_DIR$/config-service/config-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/config-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/config-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/config-service.test.iml" filepath="$PROJECT_DIR$/.idea/modules/config-service.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/discovery-service/discovery-service.iml" filepath="$PROJECT_DIR$/discovery-service/discovery-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/discovery-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/discovery-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/discovery-service.test.iml" filepath="$PROJECT_DIR$/.idea/modules/discovery-service.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/euraka-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/euraka-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/euraka-service.test.iml" filepath="$PROJECT_DIR$/.idea/modules/euraka-service.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/proxy-service/proxy-service.iml" filepath="$PROJECT_DIR$/proxy-service/proxy-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/proxy-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/proxy-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/proxy-service.test.iml" filepath="$PROJECT_DIR$/.idea/modules/proxy-service.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uaa-service/uaa-service.iml" filepath="$PROJECT_DIR$/uaa-service/uaa-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/uaa-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/uaa-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/uaa-service.test.iml" filepath="$PROJECT_DIR$/.idea/modules/uaa-service.test.iml" />
+    </modules>
+  </component>
+</project>

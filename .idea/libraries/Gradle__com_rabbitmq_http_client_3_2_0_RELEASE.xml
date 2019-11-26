@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.rabbitmq:http-client:3.2.0.RELEASE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.rabbitmq/http-client/3.2.0.RELEASE/75148952a414baba540ba76c0816bfe6c8351364/http-client-3.2.0.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.rabbitmq/http-client/3.2.0.RELEASE/d597ca1e56367c734f06d3842d394d70f3476cb8/http-client-3.2.0.RELEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.springframework.cloud:spring-cloud-netflix-zuul:2.2.0.RC2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-netflix-zuul/2.2.0.RC2/f1a444024c3cd3844b9b787c0d4a39470019dc1b/spring-cloud-netflix-zuul-2.2.0.RC2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-netflix-zuul/2.2.0.RC2/2a967f764013c5574bb2db0bd432adb6e0db2f65/spring-cloud-netflix-zuul-2.2.0.RC2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
