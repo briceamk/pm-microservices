@@ -1,4 +1,4 @@
-package cm.gelodia.proxyservice;
+package cm.gelodia.proxy;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,0 +1,6 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:///D:\\ProjetsWeb\\Spring\\pm\\pm-microservices-config

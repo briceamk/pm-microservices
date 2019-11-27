@@ -1,1 +1,22 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          searchPaths: '{application}'
+          cloneOnStart: true
+server:
+  port: 7000
+  servlet:
+    context-path: /config
+management:
+  server:
+    port: 6000
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
 

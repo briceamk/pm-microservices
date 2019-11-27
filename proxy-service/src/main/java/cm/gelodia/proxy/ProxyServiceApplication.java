@@ -1,4 +1,4 @@
-package cm.gelodia.proxyservice;
+package cm.gelodia.proxy;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

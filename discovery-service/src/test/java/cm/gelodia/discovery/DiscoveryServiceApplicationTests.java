@@ -1,4 +1,4 @@
-package cm.gelodia.euraka;
+package cm.gelodia.discovery;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
