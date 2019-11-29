@@ -2,67 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd6a77ff-73c2-4a92-8300-d9feaa77a2c7" name="Default Changelist" comment="">
-<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-=======
-      <change afterPath="$PROJECT_DIR$/proxy-service/src/main/java/cm/gelodia/proxy/config/WebMvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proxy-service/src/main/java/cm/gelodia/proxy/constant/ConstantTypes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proxy-service/src/main/java/cm/gelodia/proxy/filter/ZuulLoggingFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/config/AuditAwareImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/config/AuditingConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/config/AuthorizationServerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/config/ResourceServerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/config/StatelessSecurityApplicationInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/config/TokenStoreConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/constant/ConstantTypes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/controller/RoleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/exception/AppException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/exception/BadRequestException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/exception/ConflictException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/exception/CustomExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/exception/ExceptionInfoDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/exception/ResourceNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/model/Authority.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/model/Permission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/model/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/model/base/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/payload/ApiResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/repository/PermissionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/repository/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/security/CustomAccessDeniedHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/security/CustomAuthenticationEntryPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/security/CustomAuthenticationProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/security/CustomOAuth2RequestFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/security/CustomTokenEnhancer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/security/model/CustomUserDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/security/service/CustomUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/service/PermissionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/service/RoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/service/ValidationErrorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/service/impl/PermissionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/service/impl/RoleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/service/impl/ValidationErrorServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/resources/db/changelog/db.changelog-27112019.1108.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/resources/db/changelog/db.changelog-data-client-27112019.1441.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/resources/db/changelog/db.changelog-data-permission-role-user-27112019.1456.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/resources/db/changelog/db.changelog-master.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uaa-service/src/main/resources/jwt.jks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/proxy-service.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/proxy-service.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/proxy-service.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/proxy-service.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/uaa-service.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/uaa-service.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/uaa-service.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/uaa-service.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proxy-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/proxy-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uaa-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/uaa-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uaa-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/uaa-service/src/main/resources/bootstrap.yml" afterDir="false" />
->>>>>>> uaa-01
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -271,11 +211,7 @@
       <workItem from="1574970593082" duration="30607000" />
       <workItem from="1575023495678" duration="8132000" />
       <workItem from="1575036660194" duration="626000" />
-<<<<<<< HEAD
-      <workItem from="1575037427082" duration="2000000" />
-=======
-      <workItem from="1575037427082" duration="1765000" />
->>>>>>> uaa-01
+      <workItem from="1575037427082" duration="2253000" />
     </task>
     <servers />
   </component>
@@ -324,19 +260,5 @@
         <option value="1" />
       </set>
     </option>
-<<<<<<< HEAD
-=======
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/uaa-service/src/main/java/cm/gelodia/uaa/security/CustomAuthenticationProvider.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
->>>>>>> uaa-01
   </component>
 </project>
