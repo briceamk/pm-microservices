@@ -1,0 +1,151 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <changeSet author="bamk" id="271120191108-0-0">
+        <createTable tableName="oauth_client_details" >
+            <column name="client_id" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="client_secret" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="web_server_redirect_uri" type="VARCHAR(2048)"/>
+            <column name="scope" type="VARCHAR(255)"/>
+            <column name="access_token_validity" type="INT"/>
+            <column name="refresh_token_validity" type="INT"/>
+            <column name="resource_ids" type="VARCHAR(1024)"/>
+            <column name="authorized_grant_types" type="VARCHAR(1024)"/>
+            <column name="authorities" type="VARCHAR(1024)"/>
+            <column name="additional_information" type="VARCHAR(4096)"/>
+            <column name="autoapprove" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="bamk" id="271120191108-0-1">
+        <createTable tableName="permission">
+            <column name="id" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="create_at" type="timestamp"/>
+            <column name="create_by" type="VARCHAR(255)"/>
+            <column name="update_at" type="timestamp"/>
+            <column name="update_by" type="VARCHAR(255)"/>
+            <column name="name" type="VARCHAR(512)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="bamk" id="271120191108-0-2">
+        <createTable tableName="role">
+            <column name="id" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="create_at" type="timestamp"/>
+            <column name="create_by" type="VARCHAR(255)"/>
+            <column name="update_at" type="timestamp"/>
+            <column name="update_by" type="VARCHAR(255)"/>
+            <column name="name" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="bamk" id="271120191108-0-3">
+        <createTable tableName="role_permission">
+            <column name="permission_id" type="VARCHAR(255)"/>
+            <column name="role_id" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="bamk" id="271120191108-0-4">
+        <createTable tableName="users">
+            <column name="id" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="create_at" type="timestamp"/>
+            <column name="create_by" type="VARCHAR(255)"/>
+            <column name="update_at" type="timestamp"/>
+            <column name="update_by" type="VARCHAR(255)"/>
+            <column name="username" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="full_name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="password" type="VARCHAR(1024)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="email" type="VARCHAR(1024)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="company_id" type="VARCHAR(1024)"/>
+            <column name="registration_date" type="timestamp"/>
+            <column name="enabled" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+            <column name="account_non_expired" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+            <column name="credentials_non_expired" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+            <column name="account_non_locked" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="bamk" id="271120191108-0-5">
+        <createTable tableName="users_role">
+            <column name="role_id" type="VARCHAR(255)"/>
+            <column name="user_id" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="bamk" id="271120191108-0-6">
+        <addPrimaryKey columnNames="client_id" constraintName="oauth_client_details_pk_id" tableName="oauth_client_details"/>
+    </changeSet>
+    <changeSet author="bamk" id="271120191108-0-7">
+        <addPrimaryKey columnNames="id" constraintName="permission_pk_id" tableName="permission"/>
+    </changeSet>
+    <changeSet author="bamk" id="271120191108-0-8">
+        <addPrimaryKey columnNames="id" constraintName="role_pk_id" tableName="role"/>
+    </changeSet>
+    <changeSet author="bamk" id="271120191108-0-9">
+        <addPrimaryKey columnNames="id" constraintName="user_pk_id" tableName="users"/>
+    </changeSet>
+    <changeSet author="bamk" id="271120191108-0-10">
+        <addUniqueConstraint columnNames="email" constraintName="user_uk_email" tableName="users"/>
+    </changeSet>
+    <changeSet author="bamk" id="271120191108-0-11">
+        <addUniqueConstraint columnNames="name" constraintName="permission_uk_name" tableName="permission"/>
+    </changeSet>
+    <changeSet author="bamk" id="271120191108-0-12">
+        <addUniqueConstraint columnNames="name" constraintName="role_uk_name" tableName="role"/>
+    </changeSet>
+    <changeSet author="bamk" id="271120191108-0-13">
+        <addUniqueConstraint columnNames="username" constraintName="user_uk_username" tableName="users"/>
+    </changeSet>
+    <changeSet author="bamk" id="271120191108-0-14">
+        <createIndex indexName="role_permission_idk_permission_id" tableName="role_permission">
+            <column name="permission_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="bamk" id="271120191108-0-15">
+        <createIndex indexName="role_permission_idk_role_id" tableName="role_permission">
+            <column name="role_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="bamk" id="271120191108-0-16">
+        <createIndex indexName="users_role_idk_role_id" tableName="users_role">
+            <column name="role_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="bamk" id="271120191108-0-17">
+        <createIndex indexName="users_role_idk_user_id" tableName="users_role">
+            <column name="user_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="bamk" id="271120191108-0-18">
+        <addForeignKeyConstraint baseColumnNames="permission_id" baseTableName="role_permission" constraintName="role_permission_ibfk_1" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="permission"/>
+    </changeSet>
+    <changeSet author="bamk" id="271120191108-0-19">
+        <addForeignKeyConstraint baseColumnNames="role_id" baseTableName="role_permission" constraintName="role_permission_ibfk_2" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="role"/>
+    </changeSet>
+    <changeSet author="bamk" id="271120191108-0-20">
+        <addForeignKeyConstraint baseColumnNames="role_id" baseTableName="users_role" constraintName="users_role_ibfk_1" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="role"/>
+    </changeSet>
+    <changeSet author="bamk" id="271120191108-0-21">
+        <addForeignKeyConstraint baseColumnNames="user_id" baseTableName="users_role" constraintName="users_role_ibfk_2" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="users"/>
+    </changeSet>
+</databaseChangeLog>

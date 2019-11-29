@@ -1,0 +1,95 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <changeSet author="bamk (generated)" id="271120191457-0-0">
+        <insert tableName="permission">
+            <column name="id" valueComputed="uuid_generate_v4()"/>
+            <column name="create_at" valueDate="now()"/>
+            <column name="create_by"/>
+            <column name="update_at"/>
+            <column name="update_by"/>
+            <column name="name" value="CREATE_USER"/>
+        </insert>
+        <insert tableName="permission">
+            <column name="id" valueComputed="uuid_generate_v4()"/>
+            <column name="create_at" valueDate="now()"/>
+            <column name="create_by"/>
+            <column name="update_at"/>
+            <column name="update_by"/>
+            <column name="name" value="READ_USER"/>
+        </insert>
+        <insert tableName="permission">
+            <column name="id" valueComputed="uuid_generate_v4()"/>
+            <column name="create_at" valueDate="now()"/>
+            <column name="create_by"/>
+            <column name="update_at"/>
+            <column name="update_by"/>
+            <column name="name" value="UPDATE_USER"/>
+        </insert>
+        <insert tableName="permission">
+            <column name="id" valueComputed="uuid_generate_v4()"/>
+            <column name="create_at" valueDate="now()"/>
+            <column name="create_by"/>
+            <column name="update_at"/>
+            <column name="update_by"/>
+            <column name="name" value="DELETE_USER"/>
+        </insert>
+    </changeSet>
+    <changeSet author="bamk" id="271120191457-1-0">
+        <insert tableName="role">
+            <column name="id" value="e92accf3-954f-11e9-8c32-54ee757a63af"/>
+            <column name="create_at" valueDate="now()"/>
+            <column name="create_by"/>
+            <column name="update_at"/>
+            <column name="update_by"/>
+            <column name="name" value="ROLE_USER"/>
+        </insert>
+        <insert tableName="role">
+            <column name="id" value="e92b1b8c-954f-11e9-8c32-54ee757a63af"/>
+            <column name="create_at" valueDate="now()"/>
+            <column name="create_by"/>
+            <column name="update_at"/>
+            <column name="update_by"/>
+            <column name="name" value="ROLE_MANAGER"/>
+        </insert>
+        <insert tableName="role">
+            <column name="id" value="e92b5cbf-954f-11e9-8c32-54ee757a63af"/>
+            <column name="create_at" valueDate="now()"/>
+            <column name="create_by"/>
+            <column name="update_at"/>
+            <column name="update_by"/>
+            <column name="name" value="ROLE_ADMIN"/>
+        </insert>
+    </changeSet>
+    <changeSet author="bamk (generated)" id="271120191457-2-0">
+        <insert tableName="users">
+            <column name="id" value="e92ddc3c-954f-11e9-8c32-54ee757a63af"/>
+            <column name="create_at" valueDate="now()"/>
+            <column name="create_by"/>
+            <column name="update_at"/>
+            <column name="update_by"/>
+            <column name="username" value="admin"/>
+            <column name="full_name" value="Administrator"/>
+            <column name="password" value="{bcrypt}$2a$10$gjUzeBxjGhAINJqTSmMry.N1MVvh36lDeimF5umhF6c50pX7SGwhO"/>
+            <column name="registration_date" valueDate="now()"/>
+            <column name="email" value="admin@gmail.com"/>
+            <column name="enabled" valueBoolean="true"/>
+            <column name="account_non_expired" valueBoolean="true"/>
+            <column name="credentials_non_expired" valueBoolean="true"/>
+            <column name="account_non_locked" valueBoolean="true"/>
+        </insert>
+    </changeSet>
+    <changeSet author="bamk (generated)" id="271120191457-3-0">
+        <insert tableName="users_role">
+            <column name="user_id" value="e92ddc3c-954f-11e9-8c32-54ee757a63af"/>
+            <column name="role_id" value="e92b5cbf-954f-11e9-8c32-54ee757a63af"/>
+        </insert>
+        <insert tableName="users_role">
+            <column name="user_id" value="e92ddc3c-954f-11e9-8c32-54ee757a63af"/>
+            <column name="role_id" value="e92b1b8c-954f-11e9-8c32-54ee757a63af"/>
+        </insert>
+        <insert tableName="users_role">
+            <column name="user_id" value="e92ddc3c-954f-11e9-8c32-54ee757a63af"/>
+            <column name="role_id" value="e92accf3-954f-11e9-8c32-54ee757a63af"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

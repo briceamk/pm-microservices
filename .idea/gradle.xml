@@ -28,6 +28,7 @@
         <option name="useQualifiedModuleNames" value="true" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="disableWrapperSourceDistributionNotification" value="true" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/proxy-service" />
         <option name="gradleHome" value="C:/ProgramData/chocolatey/lib/gradle/tools/gradle-5.1.1" />

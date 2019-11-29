@@ -1,0 +1,18 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <changeSet author="bamk" id="27112019144300-1-0">
+        <insert tableName="oauth_client_details">
+            <column name="client_id" value="webclient"/>
+            <column name="client_secret" value="{bcrypt}$2a$10$gjUzeBxjGhAINJqTSmMry.N1MVvh36lDeimF5umhF6c50pX7SGwhO"/>
+            <column name="web_server_redirect_uri" value="http://localhost:8080/code"/>
+            <column name="scope" value="READ,WRITE,CREATE,DELETE"/>
+            <column name="access_token_validity" valueNumeric="3600"/>
+            <column name="refresh_token_validity" valueNumeric="10000"/>
+            <column name="resource_ids" value="uaa,hr,contract,payroll,partner,product,invoice,company,batch"/>
+            <column name="authorized_grant_types" value="authorization_code,password,refresh_token,implicit"/>
+            <column name="authorities"/>
+            <column name="additional_information" value="{}"/>
+            <column name="autoapprove"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
